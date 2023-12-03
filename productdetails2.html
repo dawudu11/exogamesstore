@@ -1,176 +1,45 @@
-<div id='product-component-1701521657088'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: '4c1b18-2.myshopify.com',
-      storefrontAccessToken: '5ce9b818e1f3930dd99eee6e8530eb2d',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '8597945680217',
-        node: document.getElementById('product-component-1701521657088'),
-        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "title": {
-        "font-size": "26px"
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#e64a35"
-        },
-        "background-color": "#ff523b",
-        ":focus": {
-          "background-color": "#e64a35"
-        }
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15.299999999999999px"
-      },
-      "unitPrice": {
-        "font-size": "15.299999999999999px"
-      }
-    },
-    "layout": "horizontal",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "description": true
-    },
-    "width": "100%",
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        ":hover": {
-          "background-color": "#e64a35"
-        },
-        "background-color": "#ff523b",
-        ":focus": {
-          "background-color": "#e64a35"
-        }
-      },
-      "title": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "bold",
-        "font-size": "26px",
-        "color": "#4c4c4c"
-      },
-      "price": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "18px",
-        "color": "#4c4c4c"
-      },
-      "compareAt": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "15.299999999999999px",
-        "color": "#4c4c4c"
-      },
-      "unitPrice": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "15.299999999999999px",
-        "color": "#4c4c4c"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        ":hover": {
-          "background-color": "#e64a35"
-        },
-        "background-color": "#ff523b",
-        ":focus": {
-          "background-color": "#e64a35"
-        }
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "notice": "Shipping is added at checkout.",
-      "button": "Checkout"
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#ff523b",
-        ":hover": {
-          "background-color": "#e64a35"
-        },
-        ":focus": {
-          "background-color": "#e64a35"
-        }
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
+<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+
+
+
+<div id="my-store-95778670"></div>
+<div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?95778670&data_platform=code&data_date=2023-12-03" charset="utf-8"></script>
+<script type="text/javascript"> 
+window.ec=window.ec||{}; 
+window.ec.storefront=window.ec.storefront||{}; 
+window.ec.storefront.enable_navigation=true;
+window.ec.storefront.product_details_layout="TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT";
+window.ec.storefront.product_details_gallery_layout="SINGLE_IMAGE";
+window.ec.storefront.product_details_two_columns_with_right_sidebar_show_product_description_on_sidebar=true;
+window.ec.storefront.product_details_two_columns_with_left_sidebar_show_product_description_on_sidebar=false;
+window.ec.storefront.product_details_show_product_name=true;
+window.ec.storefront.product_details_show_breadcrumbs=true;
+window.ec.storefront.product_details_show_product_sku=false;
+window.ec.storefront.product_details_show_product_price=true;
+window.ec.storefront.product_details_show_in_stock_label=true;
+window.ec.storefront.product_details_show_number_of_items_in_stock=true;
+window.ec.storefront.product_details_show_qty=false;
+window.ec.storefront.product_details_show_wholesale_prices=true;
+window.ec.storefront.product_details_show_product_options=true;
+window.ec.storefront.product_details_show_product_description=false;
+window.ec.storefront.product_details_show_delivery_time=undefined;
+window.ec.storefront.product_details_show_share_buttons=true;
+window.ec.storefront.product_details_position_product_name=100;
+window.ec.storefront.product_details_position_breadcrumbs=200;
+window.ec.storefront.product_details_position_product_sku=300;
+window.ec.storefront.product_details_position_product_price=400;
+window.ec.storefront.product_details_position_product_options=undefined;
+window.ec.storefront.product_details_position_buy_button=600;
+window.ec.storefront.product_details_position_wholesale_prices=700;
+window.ec.storefront.product_details_position_product_description=800;
+window.ec.storefront.product_details_position_delivery_time=undefined;
+window.ec.storefront.product_details_position_share_buttons=900;
+window.ec.storefront.product_details_position_subtitle=500;
+window.ec.storefront.product_details_show_subtitle=true;
+xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","defaultProductId=610542949","id=my-store-95778670");
 </script>
+</div>
